@@ -1,6 +1,5 @@
-import type { Metadata } from "next";
 import "./globals.css";
-
+import type { Metadata } from "next";
 import { Figtree } from "next/font/google";
 const figtree = Figtree({ subsets: ["latin"] });
 
@@ -15,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-br">
       <body className={`${figtree.className} antialiased`}>{children}</body>
     </html>
   );
