@@ -1,49 +1,13 @@
 import Image from "next/image";
-import styled from "styled-components";
 import { QuestionComponent } from "../QuestionComponent/QuestionComponent";
-
-const SectionWrapper = styled.section`
-  background: #ffffff;
-`;
-
-const SectionContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 90rem;
-  margin: 0 auto;
-  margin-top: 7.5rem;
-  height: 37rem;
-`;
-
-const DivSimulate = styled.div`
-  width: 43.75rem;
-`;
-
-const Paragraph = styled.p`
-  font-size: 1rem;
-  font-weight: 500;
-  color: #6368bd;
-  margin-bottom: 0.625rem;
-`;
-
-const Title = styled.h2`
-  font-size: 3rem;
-  font-weight: 700;
-  color: #2a2a2a;
-  text-transform: uppercase;
-  margin-bottom: 2rem;
-
-  span {
-    color: #6368bd;
-  }
-`;
-
-const Description = styled.p`
-  font-weight: 500;
-  color: #7a7a7a;
-  margin-bottom: 2rem;
-`;
+import {
+  SectionWrapper,
+  SectionContainer,
+  DivSimulate,
+  Paragraph,
+  Title,
+  Description,
+} from "./style";
 
 export function SimulateSection() {
   return (

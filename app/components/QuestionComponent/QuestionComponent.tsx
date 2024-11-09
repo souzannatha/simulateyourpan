@@ -14,7 +14,7 @@ export function QuestionComponent({
 }: QuestionComponentProps) {
   return (
     <Question>
-      <Image src={src} width={50} height={50} alt="Icone de dolar" />
+      <Image src={src} width={50} height={50} alt="icones" />
       <div>
         <QuestionTitle>{title}</QuestionTitle>
         <QuestionParagraph>{paragraph}</QuestionParagraph>

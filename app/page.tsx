@@ -1,9 +1,15 @@
-import { Header } from "./components/Header";
+"use client";
+
+import { FormSection } from "./components/FormSection/FormSection";
+import { Header } from "./components/Header/Header";
+import { SimulateSection } from "./components/SimulateSection/SimulateSection";
 
 export default function Home() {
   return (
-    <h1>
+    <section>
       <Header />
-    </h1>
+      <SimulateSection />
+      <FormSection />
+    </section>
   );
 }
