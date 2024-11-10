@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { SectionWrapper, SectionContainer, LeftDiv, RightDiv } from "./style";
 
 export function FormSection() {
@@ -12,6 +13,7 @@ export function FormSection() {
         </LeftDiv>
         <RightDiv>
           <p>formulário aqui</p>
+          <Link href="/compare">Link</Link>
         </RightDiv>
       </SectionContainer>
     </SectionWrapper>
