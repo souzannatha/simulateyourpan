@@ -12,9 +12,8 @@ export default function Home() {
       <Header />
       <SimulateSection />
       <FormSection />
-      {/*
       <Announcement />
-      <Footer /> */}
+      <Footer />
     </section>
   );
 }

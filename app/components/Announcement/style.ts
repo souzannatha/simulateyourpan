@@ -12,4 +12,10 @@ export const SectionContainer = styled.div`
   margin: 0 auto;
   margin-top: 6.25rem;
   height: 48rem;
+  @media (max-width: 768px) {
+    gap: 2rem;
+    width: 100%;
+    height: 28rem;
+    flex-direction: column;
+  }
 `;
