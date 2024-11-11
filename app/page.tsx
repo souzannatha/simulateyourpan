@@ -10,10 +10,10 @@ export default function Home() {
   return (
     <section>
       <Header />
-      <SimulateSection />
+      {/* <SimulateSection />
       <FormSection />
       <Announcement />
-      <Footer />
+      <Footer /> */}
     </section>
   );
 }

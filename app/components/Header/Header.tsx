@@ -1,25 +1,41 @@
 import Image from "next/image";
 import styled from "styled-components";
-import { HeaderContent, HeaderWrapper, TextContent, Title } from "./style";
+import {
+  HeaderContent,
+  HeaderWrapper,
+  Subtitle,
+  TextContent,
+  Title,
+} from "./style";
 
 const StyledImage = styled(Image)`
-  margin-top: 230px;
-`;
-const Subtitle = styled.p`
-  font-size: 1.5rem;
-  font-weight: 400;
+  top: 295px;
+  position: relative;
+
+  @media (max-width: 768px) {
+    top: 30px;
+    width: 350px;
+    margin: 0 auto;
+  }
 `;
 
 const Logo = styled(Image)`
   position: absolute;
   top: -7px;
   left: 240px;
+
+  @media (max-width: 768px) {
+    width: 350px;
+    left: 20px;
+    margin-top: -10px;
+    flex-direction: column;
+  }
 `;
 
 export function Header() {
   return (
     <HeaderWrapper>
-      <Logo src="./logo.svg" width={500} height={120} alt="Logo" />
+      <Logo src="./logo.svg" width={700} height={120} alt="Logo" />
       <HeaderContent>
         <TextContent>
           <Title>
