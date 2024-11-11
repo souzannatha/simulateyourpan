@@ -12,10 +12,21 @@ export const SectionContainer = styled.div`
   margin: 0 auto;
   margin-top: 7.5rem;
   height: 37rem;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-top: 15rem;
+    flex-direction: column;
+    justify-content: center;
+  }
 `;
 
 export const DivSimulate = styled.div`
   width: 43.75rem;
+  @media (max-width: 768px) {
+    margin: 0 auto;
+    width: 20rem;
+  }
 `;
 
 export const Paragraph = styled.p`
@@ -23,6 +34,9 @@ export const Paragraph = styled.p`
   font-weight: 500;
   color: #6368bd;
   margin-bottom: 0.625rem;
+  @media (max-width: 768px) {
+    margin-top: 20px;
+  }
 `;
 
 export const Title = styled.h2`
@@ -41,4 +55,7 @@ export const Description = styled.p`
   font-weight: 500;
   color: #7a7a7a;
   margin-bottom: 2rem;
+  @media (max-width: 768px) {
+    line-height: 1.4;
+  }
 `;

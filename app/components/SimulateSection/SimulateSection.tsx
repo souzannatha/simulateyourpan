@@ -8,12 +8,20 @@ import {
   Title,
   Description,
 } from "./style";
+import { styled } from "styled-components";
+
+export const StyledImage = styled(Image)`
+  @media (max-width: 768px) {
+    width: 350px;
+    height: 250px;
+  }
+`;
 
 export function SimulateSection() {
   return (
     <SectionWrapper>
       <SectionContainer>
-        <Image
+        <StyledImage
           src="./person-simulate.svg"
           alt="Uma mulher segurando um tablet"
           width={705}
