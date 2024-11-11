@@ -2,8 +2,12 @@ import styled from "styled-components";
 
 export const SectionWrapper = styled.section`
   background: #e0ecfc;
+  width: 100%;
+  @media (max-width: 768px) {
+    margin-top: 220px;
+    overflow: scroll;
+  }
 `;
-
 export const SectionContainer = styled.div`
   display: flex;
   justify-content: space-between;
@@ -11,6 +15,12 @@ export const SectionContainer = styled.div`
   width: 90rem;
   margin: 0 auto;
   height: 182.125rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
 `;
 
 export const LeftDiv = styled.div`
@@ -20,6 +30,9 @@ export const LeftDiv = styled.div`
   h3 {
     margin-bottom: 10px;
   }
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const RightDiv = styled.div`
@@ -27,26 +40,38 @@ export const RightDiv = styled.div`
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin-top: 7.5rem;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const TitleContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 1400px;
-  margin-left: 200px;
-
+  width: 100%;
+  margin: 0 auto;
   h2 {
     font-size: 4rem;
     text-transform: uppercase;
     color: #6368bd;
   }
+
   span {
     display: inline-block;
     color: #2a2a2a;
     margin-top: 60px;
   }
+
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 1.4rem;
+    }
+  }
 `;
+
 export const CardWrapper = styled.div`
   display: flex;
   flex-direction: column;

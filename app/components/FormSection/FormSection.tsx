@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { SectionWrapper, SectionContainer, LeftDiv, RightDiv } from "./style";
+import { Form } from "../Form/Form";
 
 export function FormSection() {
   return (
@@ -12,8 +12,7 @@ export function FormSection() {
           <div>Passo 1: Preencha o formulário</div>
         </LeftDiv>
         <RightDiv>
-          <p>formulário aqui</p>
-          <Link href="/compare">Link</Link>
+          <Form />
         </RightDiv>
       </SectionContainer>
     </SectionWrapper>

@@ -23,6 +23,10 @@ const LinkStyled = styled(Link)`
   font-size: 1rem;
   color: #15aad6;
   text-decoration: none;
+  margin-top: 3rem;
+  @media (max-width: 768px) {
+    margin-top: 3.5rem;
+  }
 `;
 
 export function Quotation() {
