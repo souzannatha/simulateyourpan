@@ -6,6 +6,12 @@ const Logo = styled(Image)`
   position: absolute;
   bottom: 150px;
   left: -210px;
+  @media (max-width: 768px) {
+    width: 350px;
+    left: -140px;
+    bottom: 60px;
+    flex-direction: column;
+  }
 `;
 
 export function Footer() {
